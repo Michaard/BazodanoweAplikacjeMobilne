@@ -1,14 +1,18 @@
 package michaard.testapplication;
 
 import android.app.Activity;
-import  android.os.Bundle;
-import android.text.Editable;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class KlasaMain extends Activity{
+    TextView topText=(TextView)findViewById(R.id.topText);
+    TextView bottomText=(TextView)findViewById(R.id.bottomText);
+    EditText firstName=(EditText)findViewById(R.id.editName);
+    EditText lastName=(EditText)findViewById(R.id.editSurname);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +22,6 @@ public class KlasaMain extends Activity{
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                TextView topText=(TextView)findViewById(R.id.topText);
                 topText.setText("Wciśnięto przycisk1!");
             }
         });
@@ -26,7 +29,6 @@ public class KlasaMain extends Activity{
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                TextView topText=(TextView)findViewById(R.id.topText);
                 topText.setText("Wciśnięto przycisk2!");
             }
         });
@@ -34,7 +36,6 @@ public class KlasaMain extends Activity{
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                TextView topText=(TextView)findViewById(R.id.topText);
                 topText.setText("Wciśnięto przycisk3!");
             }
         });
@@ -42,10 +43,14 @@ public class KlasaMain extends Activity{
         button4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                TextView bottomText=(TextView)findViewById(R.id.bottomText);
-                EditText firstName=(EditText)findViewById(R.id.editName);
-                EditText lastName=(EditText)findViewById(R.id.editSurname);
                 bottomText.setText(firstName.getText()+" "+lastName.getText());
+            }
+        });
+        Button button5=(Button)findViewById(R.id.buttonPic);
+        button5.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,Obrazek.class);
+                startActivity(intent);
             }
         });
     }
