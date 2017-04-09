@@ -94,11 +94,16 @@
         android:text="Imię Nazwisko"
         android:textSize="25dp"/>
 
-    <Button
-        android:id="@+id/buttonPic"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="OBRAZKI" />
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/buttonPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OBRAZKI"/>
+    </LinearLayout>
 
 </LinearLayout>

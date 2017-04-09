@@ -92,7 +92,8 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
         <Button
             android:id="@+id/buttonPic"
             android:layout_width="wrap_content"
