@@ -14,18 +14,13 @@
     <TableLayout
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+        <TableRow>
             <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_column="1"
                 android:text="PRZYCISK1"/>
 
@@ -33,7 +28,6 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_column="2"
                 android:text="PRZYCISK2"/>
 
@@ -41,7 +35,6 @@
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_column="3"
                 android:text="PRZYCISK3"/>
         </TableRow>
@@ -97,11 +90,14 @@
         android:text="Imię Nazwisko"
         android:textSize="30dp"/>
 
-    <Button
-        android:id="@+id/buttonPic"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Obrazki"/>
-
+        <Button
+            android:id="@+id/buttonPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OBRAZKI"/>
+    </LinearLayout>
 </LinearLayout>
