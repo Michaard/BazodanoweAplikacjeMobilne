@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#336699">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="109dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            android:tag="Las"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup1"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubię"
+                android:id="@+id/radioButton11"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nie Lubię"
+                android:id="@+id/radioButton12"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="109dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            android:tag="Las"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup2"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubię"
+                android:id="@+id/radioButton21"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nie Lubię"
+                android:id="@+id/radioButton22"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="109dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            android:tag="Las"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup3"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubię"
+                android:id="@+id/radioButton31"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nie Lubię"
+                android:id="@+id/radioButton32"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="109dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            android:tag="Las"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup4"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubię"
+                android:id="@+id/radioButton41"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nie Lubię"
+                android:id="@+id/radioButton42"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="109dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            android:tag="Las"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup5"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubię"
+                android:id="@+id/radioButton51"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nie Lubię"
+                android:id="@+id/radioButton52"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="quizResult"
+            android:text="SUBMIT" />
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="quizResult"
+            android:text="Powrót" />
+
+    </LinearLayout>
+
+</ScrollView>

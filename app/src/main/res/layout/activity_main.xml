@@ -93,12 +93,17 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
         <Button
             android:id="@+id/buttonPic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="OBRAZKI"/>
+        <Button
+            android:id="@+id/buttonQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ"/>
     </LinearLayout>
 </LinearLayout>
