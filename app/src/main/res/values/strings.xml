@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestApplication</string>
+    <string-array name="phonesRes">
+        <item>HTC 620G Desire</item>
+        <item>Samsung Galaxy S7</item>
+        <item>Nokia 3310</item>
+    </string-array>
 </resources>

@@ -55,12 +55,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="First Name:"/>
+                android:text="Imię:"/>
             <EditText
                 android:id="@+id/editName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="38.5dp"
                 android:width="250dp"/>
         </LinearLayout>
 
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Last Name:"/>
+                android:text="Nazwisko:"/>
             <EditText
                 android:id="@+id/editSurname"
                 android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SUBMIT"/>
+            android:text="ZAPISZ"/>
 
         <TextView
             android:id="@+id/bottomText"
@@ -98,25 +98,32 @@
             android:text="Imię Nazwisko"
             android:textSize="25dp"/>
 
-        <TableLayout
-            android:layout_gravity="center"
-            android:orientation="horizontal"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TableRow>
-                <Button
-                    android:id="@+id/buttonPic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="OBRAZKI"/>
-                <Button
-                    android:id="@+id/buttonQuiz"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="QUIZ"/>
-            </TableRow>
-        </TableLayout>
-
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OBRAZKI"/>
+            <Button
+                android:id="@+id/buttonQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUIZ"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonPhoneList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LISTA TELEFONÓW"/>
+        </LinearLayout>
     </LinearLayout>
-
 </ScrollView>

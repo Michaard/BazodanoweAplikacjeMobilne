@@ -14,11 +14,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Obrazek">
-        </activity>
-        <activity android:name=".Quiz">
-        </activity>
-        <activity android:name=".QuizLauncher">
-        </activity>
+        <activity android:name=".Obrazek"></activity>
+        <activity android:name=".Quiz"></activity>
+        <activity android:name=".QuizLauncher"></activity>
+        <activity android:name=".ListaTelefonow"></activity>
+        <activity android:name=".Htc"></activity>
+        <activity android:name=".Nokia"></activity>
+        <activity android:name=".Samsung"></activity>
     </application>
 </manifest>

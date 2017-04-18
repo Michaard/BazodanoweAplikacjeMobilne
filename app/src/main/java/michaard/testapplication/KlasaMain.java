@@ -65,5 +65,12 @@ public class KlasaMain extends Activity{
                 startActivity(intent);
             }
         });
+        Button button7=(Button)findViewById(R.id.buttonPhoneList);
+        button7.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,ListaTelefonow.class);
+                startActivity(intent);
+            }
+        });
     }
 }

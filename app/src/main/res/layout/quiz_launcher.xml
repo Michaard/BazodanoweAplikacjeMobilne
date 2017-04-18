@@ -45,7 +45,5 @@
             android:layout_height="wrap_content"
             android:text="START"
             android:onClick="startQuiz"/>
-
     </LinearLayout>
-
 </RelativeLayout>

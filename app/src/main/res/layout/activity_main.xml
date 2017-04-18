@@ -49,11 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Imię:"/>
+
         <EditText
             android:id="@+id/editName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="38.5dp"
             android:width="150dp"/>
     </LinearLayout>
 
@@ -105,5 +106,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QUIZ"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonPhoneList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LISTA TELEFONÓW"/>
     </LinearLayout>
 </LinearLayout>

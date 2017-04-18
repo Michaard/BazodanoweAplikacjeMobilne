@@ -12,7 +12,6 @@ public class Quiz extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
-
     }
     public void quizResult(View v){
 
