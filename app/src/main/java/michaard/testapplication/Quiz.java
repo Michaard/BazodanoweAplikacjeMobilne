@@ -17,19 +17,19 @@ public class Quiz extends Activity{
     public void quizResult(View v){
 
         RadioGroup radioGroup1=(RadioGroup)findViewById(R.id.radioGroup1);
-        RadioButton button11=(RadioButton)findViewById(R.id.radioButton11);
+        RadioButton button13=(RadioButton)findViewById(R.id.radioButton13);
 
         RadioGroup radioGroup2=(RadioGroup)findViewById(R.id.radioGroup2);
         RadioButton button21=(RadioButton)findViewById(R.id.radioButton21);
 
         RadioGroup radioGroup3=(RadioGroup)findViewById(R.id.radioGroup3);
-        RadioButton button31=(RadioButton)findViewById(R.id.radioButton31);
+        RadioButton button32=(RadioButton)findViewById(R.id.radioButton32);
 
         RadioGroup radioGroup4=(RadioGroup)findViewById(R.id.radioGroup4);
-        RadioButton button41=(RadioButton)findViewById(R.id.radioButton41);
+        RadioButton button44=(RadioButton)findViewById(R.id.radioButton44);
 
         RadioGroup radioGroup5=(RadioGroup)findViewById(R.id.radioGroup5);
-        RadioButton button51=(RadioButton)findViewById(R.id.radioButton51);
+        RadioButton button52=(RadioButton)findViewById(R.id.radioButton52);
 
         int checkRG1=radioGroup1.getCheckedRadioButtonId();
         int checkRG2=radioGroup2.getCheckedRadioButtonId();
@@ -45,7 +45,7 @@ public class Quiz extends Activity{
             RadioButton checker;
 
             checker=(RadioButton)findViewById(checkRG1);
-            if(checker.equals(button11))
+            if(checker.equals(button13))
                 points++;
 
             checker=(RadioButton)findViewById(checkRG2);
@@ -53,15 +53,15 @@ public class Quiz extends Activity{
                 points++;
 
             checker=(RadioButton)findViewById(checkRG3);
-            if(checker.equals(button31))
+            if(checker.equals(button32))
                 points++;
 
             checker=(RadioButton)findViewById(checkRG4);
-            if(checker.equals(button41))
+            if(checker.equals(button44))
                 points++;
 
             checker=(RadioButton)findViewById(checkRG5);
-            if(checker.equals(button51))
+            if(checker.equals(button52))
                 points++;
 
             if(points==5)
