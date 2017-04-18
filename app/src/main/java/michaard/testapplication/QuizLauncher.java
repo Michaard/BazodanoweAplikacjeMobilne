@@ -22,7 +22,7 @@ public class QuizLauncher extends Activity{
         startActivity(intent);
         finish();
     }
-    public void back(View v){
+    public void exitQuizLauncher(View v){
         finish();
     }
 }

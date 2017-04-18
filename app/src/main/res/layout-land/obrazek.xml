@@ -26,7 +26,7 @@
         android:id="@+id/return1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="back"
+        android:onClick="exitPicture"
         android:text="Powrót"
         android:layout_alignTop="@+id/topTextPic"
         android:layout_alignRight="@id/imageView"

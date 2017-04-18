@@ -23,7 +23,7 @@ public class Obrazek extends Activity{
         ImageView imageView=(ImageView)findViewById(R.id.imageView);
         imageView.setImageResource(R.drawable.android2);
     }
-    public void back(View v){
+    public void exitPicture(View v){
         finish();
     }
 }
