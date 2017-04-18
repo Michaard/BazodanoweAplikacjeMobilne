@@ -70,4 +70,7 @@ public class Quiz extends Activity{
                 Toast.makeText(getApplicationContext(),"Wynik: "+points+"/5",Toast.LENGTH_LONG).show();
         }
     }
+    public void quizQuit(View v){
+        finish();
+    }
 }

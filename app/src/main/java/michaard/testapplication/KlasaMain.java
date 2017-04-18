@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class KlasaMain extends Activity{
 
@@ -41,7 +42,10 @@ public class KlasaMain extends Activity{
                 TextView bottomText=(TextView) findViewById(R.id.bottomText);
                 EditText firstName=(EditText) findViewById(R.id.editName);
                 EditText lastName=(EditText) findViewById(R.id.editSurname);
-                bottomText.setText(firstName.getText() + " " + lastName.getText());
+                if(firstName.getText().length()==0)
+                    Toast.makeText(getApplicationContext(),"Pole \"imię\" jest wymagane!",Toast.LENGTH_LONG).show();
+                else
+                    bottomText.setText(firstName.getText() + " " + lastName.getText());
             }
         });
         Button button5 = (Button) findViewById(R.id.buttonPic);
@@ -54,7 +58,10 @@ public class KlasaMain extends Activity{
         Button button6 = (Button) findViewById(R.id.buttonQuiz);
         button6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                TextView fullName=(TextView)findViewById(R.id.bottomText);
+                String name=fullName.getText().toString().split(" ")[0];
                 Intent intent=new Intent(KlasaMain.this,QuizLauncher.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

@@ -1,7 +1,6 @@
 package michaard.testapplication;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,7 +24,6 @@ public class Obrazek extends Activity{
         imageView.setImageResource(R.drawable.android2);
     }
     public void back(View v){
-        Intent intent=new Intent(Obrazek.this,KlasaMain.class);
-        startActivity(intent);
+        finish();
     }
 }
