@@ -8,9 +8,9 @@ public class Htc extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.htc);
+        setContentView(R.layout.activity_htc);
     }
     public void exitHtc(View v){
-        finish();
+        Htc.this.finish();
     }
 }

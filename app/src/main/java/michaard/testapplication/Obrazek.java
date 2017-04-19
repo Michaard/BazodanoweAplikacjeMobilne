@@ -9,7 +9,7 @@ public class Obrazek extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.obrazek);
+        setContentView(R.layout.activity_obrazek);
     }
     /*public void changePic(View v){
         ImageView imageView=(ImageView)findViewById(R.id.imageView);
@@ -24,6 +24,6 @@ public class Obrazek extends Activity{
         imageView.setImageResource(R.drawable.android2);
     }
     public void exitPicture(View v){
-        finish();
+        Obrazek.this.finish();
     }
 }

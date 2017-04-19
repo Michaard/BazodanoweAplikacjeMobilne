@@ -1,6 +1,9 @@
 package michaard.testapplication;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,9 +14,39 @@ import android.widget.Toast;
 
 public class KlasaMain extends Activity{
 
+    static final private int EXIT_DIALOG_ALERT=0;
+
+    private Dialog createExitDialogAlert(){
+        AlertDialog.Builder db=new AlertDialog.Builder(KlasaMain.this);
+        db.setTitle("Wyjście");
+        db.setMessage("Na pewno chcesz wyjść?");
+        db.setCancelable(false);
+        db.setPositiveButton("Tak",new Dialog.OnClickListener(){
+            public void onClick(DialogInterface dialog, int button){
+                Toast.makeText(getApplicationContext(),"Aplikacja wyłączona",Toast.LENGTH_LONG).show();
+                KlasaMain.this.finish();
+            }
+        });
+        db.setNegativeButton("Nie",new Dialog.OnClickListener(){
+            public void onClick(DialogInterface dialog,int button){
+                Toast.makeText(getApplicationContext(),"Wyjście anulowane",Toast.LENGTH_LONG).show();
+            }
+        });
+        return db.create();
+    }
+
+    protected Dialog onCreateDialog(int id){
+        switch (id){
+            case EXIT_DIALOG_ALERT:
+                return createExitDialogAlert();
+            default:
+                return null;
+        }
+    }
+
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_klasa_main);
 
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener(){
@@ -65,11 +98,31 @@ public class KlasaMain extends Activity{
                 startActivity(intent);
             }
         });
-        Button button7=(Button)findViewById(R.id.buttonPhoneList);
+        Button button7=(Button)findViewById(R.id.buttonAlerts);
         button7.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,Alerty.class);
+                startActivity(intent);
+            }
+        });
+        Button button8=(Button)findViewById(R.id.buttonPhoneList);
+        button8.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent=new Intent(KlasaMain.this,ListaTelefonow.class);
                 startActivity(intent);
+            }
+        });
+        Button button9=(Button)findViewById(R.id.buttonSoundPlayer);
+        button9.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,Odtwarzacz.class);
+                startActivity(intent);
+            }
+        });
+        Button button10=(Button)findViewById(R.id.buttonQuitApp);
+        button10.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                showDialog(EXIT_DIALOG_ALERT);
             }
         });
     }

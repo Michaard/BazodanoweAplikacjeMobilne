@@ -8,9 +8,9 @@ public class Samsung extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.samsung);
+        setContentView(R.layout.activity_samsung);
     }
     public void exitSamsung(View v){
-        finish();
+        Samsung.this.finish();
     }
 }

@@ -10,7 +10,7 @@ public class QuizLauncher extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz_launcher);
+        setContentView(R.layout.activity_quiz_launcher);
         String userName=getIntent().getStringExtra("name");
         if(!userName.equals("Imię")){
             TextView greeting=(TextView)findViewById(R.id.greeting);
@@ -23,6 +23,6 @@ public class QuizLauncher extends Activity{
         finish();
     }
     public void exitQuizLauncher(View v){
-        finish();
+        QuizLauncher.this.finish();
     }
 }

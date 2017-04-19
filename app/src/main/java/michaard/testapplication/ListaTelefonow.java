@@ -41,7 +41,7 @@ public class ListaTelefonow extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lista_telefonow);
+        setContentView(R.layout.activity_lista_telefonow);
         listView=(ListView)findViewById(R.id.telephones);
         initResources();
         initPhonesListView();

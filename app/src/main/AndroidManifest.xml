@@ -21,5 +21,7 @@
         <activity android:name=".Htc"></activity>
         <activity android:name=".Nokia"></activity>
         <activity android:name=".Samsung"></activity>
+        <activity android:name=".Alerty"></activity>
+        <activity android:name=".Odtwarzacz"></activity>
     </application>
 </manifest>

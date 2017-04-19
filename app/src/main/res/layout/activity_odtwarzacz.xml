@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista utworów"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/buttonStartSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WZNÓW"/>
+        <Button
+            android:id="@+id/buttonStopSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/ButtonQuitOdtwarzacz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powrót"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

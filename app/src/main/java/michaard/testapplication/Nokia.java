@@ -8,9 +8,9 @@ public class Nokia extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nokia);
+        setContentView(R.layout.activity_nokia);
     }
     public void exitNokia(View v){
-        finish();
+        Nokia.this.finish();
     }
 }

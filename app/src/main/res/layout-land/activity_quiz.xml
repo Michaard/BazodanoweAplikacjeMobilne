@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#336699">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zgadnij: kim jest osoba przedstawiona na obrazku?"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quiz_img1"
+            android:tag="QuizPicture1"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banan"
+                android:textColor="#fff"
+                android:id="@+id/radioButton11"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bumblebee"
+                android:textColor="#fff"
+                android:id="@+id/radioButton12"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homer Simpson"
+                android:textColor="#fff"
+                android:id="@+id/radioButton13"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spongebob\nKanciostoporty"
+                android:textColor="#fff"
+                android:id="@+id/radioButton14"
+                android:layout_marginBottom="10dp"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quiz_img2"
+            android:tag="QuizPicture2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup2">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uzumaki Naruto"
+                android:textColor="#fff"
+                android:id="@+id/radioButton21"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dragneel Natsu"
+                android:textColor="#fff"
+                android:id="@+id/radioButton22"
+                android:layout_gravity="bottom"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namikaze Minato"
+                android:textColor="#fff"
+                android:id="@+id/radioButton23"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uzumaki Boruto"
+                android:textColor="#fff"
+                android:id="@+id/radioButton24"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quiz_img3"
+            android:tag="QuizPicture3"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup3">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son Gohan"
+                android:textColor="#fff"
+                android:id="@+id/radioButton31"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son Goku"
+                android:textColor="#fff"
+                android:id="@+id/radioButton32"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son Pan"
+                android:textColor="#fff"
+                android:id="@+id/radioButton33"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son Goten"
+                android:textColor="#fff"
+                android:id="@+id/radioButton34"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quiz_img4"
+            android:tag="QuizPicture4"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup4">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darth Sidious"
+                android:textColor="#fff"
+                android:id="@+id/radioButton41"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darth Bane"
+                android:textColor="#fff"
+                android:id="@+id/radioButton42"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darth Maul"
+                android:textColor="#fff"
+                android:id="@+id/radioButton43"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darth Vader"
+                android:textColor="#fff"
+                android:id="@+id/radioButton44"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quiz_img5"
+            android:tag="QuizPicture5"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup5"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lara Croft"
+                android:textColor="#fff"
+                android:id="@+id/radioButton51"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yennefer\nz Vengerbergu"
+                android:textColor="#fff"
+                android:id="@+id/radioButton52"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beyonetta"
+                android:textColor="#fff"
+                android:id="@+id/radioButton53"
+                android:layout_gravity="bottom"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miranda Lawson"
+                android:textColor="#fff"
+                android:id="@+id/radioButton54"
+                android:layout_gravity="bottom"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="quizResult"
+            android:layout_marginTop="10dp"
+            android:text="WYNIK" />
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="quizQuit"
+            android:text="Powrót" />
+    </LinearLayout>
+</ScrollView>

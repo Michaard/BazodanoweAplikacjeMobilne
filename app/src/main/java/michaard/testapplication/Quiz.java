@@ -11,7 +11,7 @@ public class Quiz extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz);
+        setContentView(R.layout.activity_quiz);
     }
     public void quizResult(View v){
 
@@ -70,6 +70,6 @@ public class Quiz extends Activity{
         }
     }
     public void quizQuit(View v){
-        finish();
+        Quiz.this.finish();
     }
 }
