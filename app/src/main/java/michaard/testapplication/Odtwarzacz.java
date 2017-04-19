@@ -8,6 +8,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Odtwarzacz extends Activity{
 
@@ -70,7 +71,7 @@ public class Odtwarzacz extends Activity{
                 if(mp!=null)
                     mp.start();
                 else
-                    return;
+                    Toast.makeText(getApplicationContext(),"Nie wybrano utworu",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -79,7 +80,7 @@ public class Odtwarzacz extends Activity{
                 if(mp!=null)
                     mp.pause();
                 else
-                    return;
+                    Toast.makeText(getApplicationContext(),"Nie wybrano utworu",Toast.LENGTH_SHORT).show();
             }
         });
 
