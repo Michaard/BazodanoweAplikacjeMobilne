@@ -137,6 +137,18 @@
                 android:text="ODTWARZACZ DŹWIĘKU"
                 android:layout_gravity="center"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonSoundRecorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DŹWIĘKONAGRYWACZ"
+                android:layout_gravity="center"/>
+        </LinearLayout>
         <Button
             android:id="@+id/buttonQuitApp"
             android:layout_width="wrap_content"

@@ -13,4 +13,8 @@ public class Htc extends Activity{
     public void exitHtc(View v){
         Htc.this.finish();
     }
+
+    public void onBackPressed(){
+        Htc.this.finish();
+    }
 }

@@ -72,4 +72,7 @@ public class Quiz extends Activity{
     public void quizQuit(View v){
         Quiz.this.finish();
     }
+    public void onBackPressed(){
+        Quiz.this.finish();
+    }
 }

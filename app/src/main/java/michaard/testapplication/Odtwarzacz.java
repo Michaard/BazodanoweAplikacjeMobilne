@@ -94,4 +94,12 @@ public class Odtwarzacz extends Activity{
             }
         });
     }
+
+    public void onBackPressed(){
+        if(mp!=null) {
+            mp.stop();
+            mp.release();
+        }
+        Odtwarzacz.this.finish();
+    }
 }

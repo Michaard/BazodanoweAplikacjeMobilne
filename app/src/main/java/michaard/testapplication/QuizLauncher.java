@@ -25,4 +25,7 @@ public class QuizLauncher extends Activity{
     public void exitQuizLauncher(View v){
         QuizLauncher.this.finish();
     }
+    public void onBackPressed(){
+        QuizLauncher.this.finish();
+    }
 }

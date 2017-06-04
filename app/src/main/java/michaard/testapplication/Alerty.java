@@ -69,4 +69,8 @@ public class Alerty extends Activity{
             }
         });
     }
+
+    public void onBackPressed(){
+        Alerty.this.finish();
+    }
 }

@@ -46,4 +46,8 @@ public class ListaTelefonow extends Activity{
         initResources();
         initPhonesListView();
     }
+
+    public void onBackPressed(){
+        ListaTelefonow.this.finish();
+    }
 }

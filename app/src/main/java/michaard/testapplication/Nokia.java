@@ -13,4 +13,7 @@ public class Nokia extends Activity{
     public void exitNokia(View v){
         Nokia.this.finish();
     }
+    public void onBackPressed(){
+        Nokia.this.finish();
+    }
 }

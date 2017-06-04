@@ -26,4 +26,7 @@ public class Obrazek extends Activity{
     public void exitPicture(View v){
         Obrazek.this.finish();
     }
+    public void onBackPressed(){
+        Obrazek.this.finish();
+    }
 }

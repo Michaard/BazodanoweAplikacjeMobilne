@@ -119,11 +119,22 @@ public class KlasaMain extends Activity{
                 startActivity(intent);
             }
         });
-        Button button10=(Button)findViewById(R.id.buttonQuitApp);
+        Button button10=(Button)findViewById(R.id.buttonSoundRecorder);
         button10.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,Dzwiekonagrywacz.class);
+                startActivity(intent);
+            }
+        });
+        Button button11=(Button)findViewById(R.id.buttonQuitApp);
+        button11.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 showDialog(EXIT_DIALOG_ALERT);
             }
         });
+    }
+
+    public void onBackPressed(){
+        showDialog(EXIT_DIALOG_ALERT);
     }
 }

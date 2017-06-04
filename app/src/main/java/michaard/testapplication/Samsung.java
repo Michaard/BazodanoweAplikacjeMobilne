@@ -13,4 +13,7 @@ public class Samsung extends Activity{
     public void exitSamsung(View v){
         Samsung.this.finish();
     }
+    public void onBackPressed(){
+        Samsung.this.finish();
+    }
 }
