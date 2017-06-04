@@ -126,8 +126,15 @@ public class KlasaMain extends Activity{
                 startActivity(intent);
             }
         });
-        Button button11=(Button)findViewById(R.id.buttonQuitApp);
+        Button button11=(Button)findViewById(R.id.buttonGpsTest);
         button11.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,GpsTest.class);
+                startActivity(intent);
+            }
+        });
+        Button button12=(Button)findViewById(R.id.buttonQuitApp);
+        button12.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 showDialog(EXIT_DIALOG_ALERT);
             }

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -18,15 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Obrazek"></activity>
-        <activity android:name=".Quiz"></activity>
-        <activity android:name=".QuizLauncher"></activity>
-        <activity android:name=".ListaTelefonow"></activity>
-        <activity android:name=".Htc"></activity>
-        <activity android:name=".Nokia"></activity>
-        <activity android:name=".Samsung"></activity>
-        <activity android:name=".Alerty"></activity>
-        <activity android:name=".Odtwarzacz"></activity>
-        <activity android:name=".Dzwiekonagrywacz"></activity>
+        <activity android:name=".Obrazek"/>
+        <activity android:name=".Quiz"/>
+        <activity android:name=".QuizLauncher"/>
+        <activity android:name=".ListaTelefonow"/>
+        <activity android:name=".Htc"/>
+        <activity android:name=".Nokia"/>
+        <activity android:name=".Samsung"/>
+        <activity android:name=".Alerty"/>
+        <activity android:name=".Odtwarzacz"/>
+        <activity android:name=".Dzwiekonagrywacz"/>
+        <activity android:name=".GpsTest"/>
     </application>
 </manifest>
