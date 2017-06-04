@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dziewkoNagrywaczTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DźwiękoNagrywacz"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/microphonePicture"
+        android:src="@drawable/microphone"
+        android:tag="MicrophonePicture"
+        android:layout_above="@+id/buttonStartRec"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonStartRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:layout_above="@+id/buttonPlayRec"
+        android:layout_toStartOf="@+id/buttonPlayRec"
+        android:onClick="startRecording"/>
+    <Button
+        android:id="@+id/buttonStopRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:layout_above="@+id/buttonPlayRec"
+        android:layout_toEndOf="@+id/buttonPlayRec"
+        android:onClick="stopRecording"/>
+    <Button
+        android:id="@+id/buttonPlayRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:onClick="playRecording"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
