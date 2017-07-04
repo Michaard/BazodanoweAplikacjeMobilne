@@ -30,5 +30,6 @@
         <activity android:name=".Odtwarzacz"/>
         <activity android:name=".Dzwiekonagrywacz"/>
         <activity android:name=".GpsTest"/>
+        <activity android:name=".FileManager"/>
     </application>
 </manifest>

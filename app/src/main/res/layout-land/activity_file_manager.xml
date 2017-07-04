@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textFileContent"
+        android:text="[plik pusty]"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textFileEditText"
+        android:layout_alignStart="@+id/buttonSaveTextFile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podaj tekst do zapisania w pliku:"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="300dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textFileEditText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZAPISZ"
+        android:id="@+id/buttonSaveTextFile"
+        android:layout_alignBaseline="@+id/buttonLoadTextFile"
+        android:layout_alignBottom="@+id/buttonLoadTextFile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUŃ"
+        android:id="@+id/buttonDeleteTextFile"
+        android:layout_alignBaseline="@+id/buttonLoadTextFile"
+        android:layout_alignBottom="@+id/buttonLoadTextFile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WCZYTAJ"
+        android:id="@+id/buttonLoadTextFile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

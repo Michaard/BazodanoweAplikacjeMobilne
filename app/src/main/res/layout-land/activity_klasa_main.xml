@@ -149,6 +149,12 @@
                 android:text="DŹWIĘKONAGRYWACZ"
                 android:layout_gravity="center"/>
             <Button
+                android:id="@+id/buttonFileManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANAGER PLIKÓW"
+                android:layout_gravity="center"/>
+            <Button
                 android:id="@+id/buttonGpsTest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

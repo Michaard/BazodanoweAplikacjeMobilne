@@ -133,6 +133,13 @@ public class KlasaMain extends Activity{
                 startActivity(intent);
             }
         });
+        Button button13=(Button)findViewById(R.id.buttonFileManager);
+        button13.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent=new Intent(KlasaMain.this,FileManager.class);
+                startActivity(intent);
+            }
+        });
         Button button12=(Button)findViewById(R.id.buttonQuitApp);
         button12.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
