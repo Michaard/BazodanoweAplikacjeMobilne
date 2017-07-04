@@ -11,29 +11,89 @@
         android:text="Lista utworów"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
+
         <Button
             android:id="@+id/buttonStartSound"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="WZNÓW"/>
+
         <Button
             android:id="@+id/buttonStopSound"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="STOP"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonAddDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DODAJ OPIS"/>
+
+        <Button
+            android:id="@+id/buttonLoadDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WCZYTAJ OPIS"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCleanDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="WYCZYŚĆ OPIS"/>
+
     <Button
         android:id="@+id/ButtonQuitOdtwarzacz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Powrót"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Odtwarzany utwór:"/>
+
+        <TextView
+            android:id="@+id/tuneNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="[nie wybrano utworu]"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Opis utworu"/>
+
+    <TextView
+        android:id="@+id/tuneDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="[brak opisu]"/>
 
 </LinearLayout>
