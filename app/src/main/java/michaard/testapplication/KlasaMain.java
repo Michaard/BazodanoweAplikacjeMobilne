@@ -5,16 +5,25 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class KlasaMain extends Activity{
 
     static final private int EXIT_DIALOG_ALERT=0;
+    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE=100;
+    private static final int CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE=200;
 
     private Dialog createExitDialogAlert(){
         AlertDialog.Builder db=new AlertDialog.Builder(KlasaMain.this);
@@ -152,6 +161,22 @@ public class KlasaMain extends Activity{
             public void onClick(View view) {
                 Intent intent=new Intent(KlasaMain.this,Czujniki.class);
                 startActivity(intent);
+            }
+        });
+        Button button15=(Button)findViewById(R.id.buttonAparatTest);
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent,CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+            }
+        });
+        Button button16=(Button)findViewById(R.id.buttonCameraTest);
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+                startActivityForResult(intent,CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE);
             }
         });
     }

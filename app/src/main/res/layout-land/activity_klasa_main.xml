@@ -155,25 +155,42 @@
                 android:text="MANAGER PLIKÓW"
                 android:layout_gravity="center"/>
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/buttonGpsTest"
+            <Button
+                android:id="@+id/buttonGpsTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST GPS"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/buttonSensorsTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST CZUJNIKI"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TEST GPS"
-            android:layout_gravity="center"/>
-        <Button
-            android:id="@+id/buttonSensorsTest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TEST CZUJNIKI"
-            android:layout_gravity="center"/>
-    </LinearLayout>
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/buttonAparatTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST APARAT"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/buttonCameraTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST KAMERA"
+                android:layout_gravity="center"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonQuitApp"
