@@ -146,6 +146,14 @@ public class KlasaMain extends Activity{
                 showDialog(EXIT_DIALOG_ALERT);
             }
         });
+        Button button14=(Button)findViewById(R.id.buttonSensorsTest);
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(KlasaMain.this,Czujniki.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onBackPressed(){
