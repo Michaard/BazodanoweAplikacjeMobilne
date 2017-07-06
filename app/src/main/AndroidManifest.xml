@@ -34,5 +34,6 @@
         <activity android:name=".GpsTest"/>
         <activity android:name=".FileManager"/>
         <activity android:name=".Czujniki"/>
+        <activity android:name=".BazaTelefonow"/>
     </application>
 </manifest>

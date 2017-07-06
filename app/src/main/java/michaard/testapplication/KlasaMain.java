@@ -179,6 +179,14 @@ public class KlasaMain extends Activity{
                 startActivityForResult(intent,CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE);
             }
         });
+        Button button17=(Button)findViewById(R.id.buttonPhoneDatabase);
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(KlasaMain.this,BazaTelefonow.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onBackPressed(){

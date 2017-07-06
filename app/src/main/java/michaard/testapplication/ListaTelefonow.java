@@ -20,7 +20,7 @@ public class ListaTelefonow extends Activity{
     }
 
     private void initPhonesListView(){
-        listView.setAdapter(new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,phones));
+        listView.setAdapter(new ArrayAdapter<>(getBaseContext(),android.R.layout.simple_list_item_1,phones));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent,View v,int pos,long id){
                 if(pos==0){
